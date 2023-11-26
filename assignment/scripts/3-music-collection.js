@@ -39,6 +39,24 @@ let addedAlbum6 = addToCollection(myCollection, "Heroes (we could be)", "Alesso"
 console.log("Album added:", addedAlbum6);
 //end of music collection
 
+//start of showCollection
+
+//end of showCollection
+
+//start of findByArtist
+function findByArtist(collection, artist) {
+  let results = [];
+  
+  for (let i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist) {
+      results.push(collection[i]);
+    }
+  }
+  
+  return results;
+}
+//end of findByArtist
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
