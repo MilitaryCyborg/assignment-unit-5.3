@@ -40,7 +40,14 @@ console.log("Album added:", addedAlbum6);
 //end of music collection
 
 //start of showCollection
-
+function showCollection(collection) {
+  for (let i = 0; i < collection.length; i++) {
+    const album = collection[i];
+    const albumInfo = `${album.title} by ${album.artist}, released in ${album.yearPublished}`;
+    console.log(albumInfo);
+  }
+  return "Collection displayed successfully!";
+}
 //end of showCollection
 
 //start of findByArtist
